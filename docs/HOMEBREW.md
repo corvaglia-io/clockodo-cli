@@ -1,14 +1,65 @@
 # Homebrew
 
-Clockodo CLI is not installable with Homebrew yet from this repo alone because a Homebrew tap is a separate repository.
+Clockodo CLI is installable with Homebrew through the `corvaglia-io/homebrew-tap` tap.
 
-The recommended layout is:
+Current layout:
 
 - app repo: `corvaglia-io/clockodo-cli`
 - tap repo: `corvaglia-io/homebrew-tap`
 - user install command: `brew install corvaglia-io/tap/clockodo-cli`
 
-This repo now contains the pieces needed to support that flow.
+Current public release example:
+
+- release tag: `v0.1.0`
+- release asset: `clockodo-cli-0.1.0.tgz`
+- formula path in tap repo: `Formula/clockodo-cli.rb`
+
+## Install
+
+Install the CLI with:
+
+```bash
+brew install corvaglia-io/tap/clockodo-cli
+```
+
+Then verify:
+
+```bash
+clockodo --help
+```
+
+## Release Workflow
+
+For every new Homebrew release, use this sequence:
+
+1. Bump the version in `package.json`.
+2. Commit and push the application repo changes.
+3. Create the npm-style release tarball:
+
+```bash
+bash scripts/pack-release.sh
+```
+
+4. Copy the printed SHA-256 checksum.
+5. Create a GitHub release in `corvaglia-io/clockodo-cli` with a matching tag such as `v0.1.1`.
+6. Upload the generated tarball asset, for example `clockodo-cli-0.1.1.tgz`.
+7. Generate the updated formula:
+
+```bash
+node scripts/generate-homebrew-formula.mjs \
+  --sha256 YOUR_SHA256 \
+  --out ./clockodo-cli.rb
+```
+
+8. Copy that formula into the tap repo at `Formula/clockodo-cli.rb`.
+9. Commit and push the tap repo.
+10. Smoke test the published formula:
+
+```bash
+brew update
+brew reinstall corvaglia-io/tap/clockodo-cli
+clockodo --help
+```
 
 ## Release Artifact
 
@@ -33,6 +84,8 @@ Example output file:
 ```text
 release/clockodo-cli-0.1.0.tgz
 ```
+
+The script prints the SHA-256 checksum needed by the formula.
 
 ## GitHub Release
 
@@ -79,23 +132,32 @@ The generated formula installs with:
 - `system "npm", "install", *std_npm_args`
 - symlinks the packaged CLI binary into Homebrew `bin`
 
+If you are already inside the tap repo locally, you can write directly to the final formula path:
+
+```bash
+node /path/to/clockodo-cli/scripts/generate-homebrew-formula.mjs \
+  --sha256 YOUR_SHA256 \
+  --out ./Formula/clockodo-cli.rb
+```
+
 ## Tap Repo
 
-Create a separate repository:
+The tap repository already exists:
 
 ```text
 corvaglia-io/homebrew-tap
 ```
 
-Inside that repo, place the generated formula at:
+Inside that repo, keep the generated formula at:
 
 ```text
 Formula/clockodo-cli.rb
 ```
 
-You can either copy the generated `./clockodo-cli.rb` file into that path or write there directly if you run the generator with an output path inside the tap repo.
+The tap repo should only contain lightweight Homebrew-maintenance files such as:
 
-Then commit and push it.
+- `Formula/clockodo-cli.rb`
+- `README.md`
 
 ## User Install
 
@@ -115,3 +177,9 @@ tar -tzf release/clockodo-cli-0.1.0.tgz | head
 ```
 
 That should show an npm package tarball containing `package/`, `package/bin/`, and `package/dist/`.
+
+## Notes
+
+- Homebrew installs from the release tarball, not from the raw GitHub source archive.
+- Because `dist/` is not tracked in git, the release tarball is the supported artifact for Homebrew.
+- The formula checksum must match the exact uploaded tarball asset for the matching release tag.

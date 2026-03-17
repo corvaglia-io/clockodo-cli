@@ -25,6 +25,12 @@ The repository is not packaged for npm publication yet, so the current install p
 
 See [docs/INSTALL.md](docs/INSTALL.md) for setup details.
 
+Homebrew install is now available:
+
+```bash
+brew install corvaglia-io/tap/clockodo-cli
+```
+
 Minimal local setup:
 
 ```bash
