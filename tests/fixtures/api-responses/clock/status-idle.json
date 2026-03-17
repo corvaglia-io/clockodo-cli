@@ -1,0 +1,19 @@
+{
+  "current_time": "2026-03-16T10:30:00Z",
+  "running": null,
+  "stopped": {
+    "billable": 0,
+    "customers_id": 102,
+    "duration": 900,
+    "hourly_rate": 0,
+    "id": 8999,
+    "lumpsum": null,
+    "lumpsum_services_id": null,
+    "projects_id": 202,
+    "services_id": 302,
+    "text": "Email triage",
+    "time_since": "2026-03-16T09:40:00Z",
+    "time_until": "2026-03-16T09:55:00Z",
+    "users_id": 401
+  }
+}

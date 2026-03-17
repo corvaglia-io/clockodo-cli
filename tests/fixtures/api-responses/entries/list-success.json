@@ -1,0 +1,26 @@
+{
+  "paging": {
+    "items_per_page": 50,
+    "current_page": 1,
+    "count_pages": 1,
+    "count_items": 1
+  },
+  "entries": [
+    {
+      "id": 501,
+      "customers_id": 101,
+      "projects_id": 201,
+      "services_id": 301,
+      "users_id": 401,
+      "billable": 1,
+      "text": "Planning workshop",
+      "time_since": "2026-03-16T08:00:00Z",
+      "time_until": "2026-03-16T09:30:00Z",
+      "duration": 5400,
+      "hourly_rate": 150,
+      "lumpsum": null,
+      "lumpsum_services_id": null
+    }
+  ]
+}
+

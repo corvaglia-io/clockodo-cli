@@ -1,0 +1,33 @@
+{
+  "current_time": "2026-03-16T10:30:00Z",
+  "running": {
+    "billable": 1,
+    "customers_id": 101,
+    "duration": 1800,
+    "hourly_rate": 150,
+    "id": 9001,
+    "lumpsum": null,
+    "lumpsum_services_id": null,
+    "projects_id": 201,
+    "services_id": 301,
+    "text": "Incident follow-up",
+    "time_since": "2026-03-16T10:00:00Z",
+    "time_until": null,
+    "users_id": 401
+  },
+  "stopped": {
+    "billable": 1,
+    "customers_id": 101,
+    "duration": 5400,
+    "hourly_rate": 150,
+    "id": 9000,
+    "lumpsum": null,
+    "lumpsum_services_id": null,
+    "projects_id": 201,
+    "services_id": 301,
+    "text": "Planning workshop",
+    "time_since": "2026-03-16T08:00:00Z",
+    "time_until": "2026-03-16T09:30:00Z",
+    "users_id": 401
+  }
+}

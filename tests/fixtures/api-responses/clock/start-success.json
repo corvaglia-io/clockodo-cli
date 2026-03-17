@@ -1,0 +1,20 @@
+{
+  "current_time": "2026-03-16T10:30:05Z",
+  "running": {
+    "billable": 1,
+    "customers_id": 103,
+    "duration": 0,
+    "hourly_rate": 150,
+    "id": 9002,
+    "lumpsum": null,
+    "lumpsum_services_id": null,
+    "projects_id": 203,
+    "services_id": 303,
+    "text": "Support triage",
+    "time_since": "2026-03-16T10:30:05Z",
+    "time_until": null,
+    "users_id": 401
+  },
+  "stopped": null,
+  "stopped_has_been_truncated": false
+}

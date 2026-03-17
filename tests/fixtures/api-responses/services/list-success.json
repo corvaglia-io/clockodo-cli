@@ -1,0 +1,18 @@
+{
+  "paging": {
+    "items_per_page": 50,
+    "current_page": 1,
+    "count_pages": 1,
+    "count_items": 1
+  },
+  "data": [
+    {
+      "id": 301,
+      "name": "Consulting",
+      "number": "S-301",
+      "active": true,
+      "note": "Standard consulting service"
+    }
+  ]
+}
+

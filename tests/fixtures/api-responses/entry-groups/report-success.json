@@ -1,0 +1,101 @@
+{
+  "groups": [
+    {
+      "group": "10001",
+      "name": "Acme AG",
+      "duration": 10800,
+      "restrictions": {
+        "billable": 1
+      },
+      "revenue": 450,
+      "has_budget_revenues_billed": false,
+      "has_budget_revenues_not_billed": false,
+      "has_non_budget_revenues_billed": false,
+      "has_non_budget_revenues_not_billed": true,
+      "budget_used": false,
+      "hourly_rate": 150,
+      "hourly_rate_is_equal_and_has_no_lumpsums": true,
+      "grouped_by": "customers_id",
+      "sub_groups": [
+        {
+          "group": "20001",
+          "name": "Platform",
+          "duration": 7200,
+          "restrictions": {
+            "billable": 1,
+            "customers_id": 10001
+          },
+          "revenue": 300,
+          "has_budget_revenues_billed": false,
+          "has_budget_revenues_not_billed": false,
+          "has_non_budget_revenues_billed": false,
+          "has_non_budget_revenues_not_billed": true,
+          "budget_used": false,
+          "hourly_rate": 150,
+          "hourly_rate_is_equal_and_has_no_lumpsums": true,
+          "grouped_by": "projects_id",
+          "sub_groups": [
+            {
+              "group": "30001",
+              "name": "Development",
+              "duration": 7200,
+              "restrictions": {
+                "billable": 1,
+                "customers_id": 10001,
+                "projects_id": 20001
+              },
+              "revenue": 300,
+              "has_budget_revenues_billed": false,
+              "has_budget_revenues_not_billed": false,
+              "has_non_budget_revenues_billed": false,
+              "has_non_budget_revenues_not_billed": true,
+              "budget_used": false,
+              "hourly_rate": 150,
+              "hourly_rate_is_equal_and_has_no_lumpsums": true,
+              "grouped_by": "services_id"
+            }
+          ]
+        },
+        {
+          "group": "20002",
+          "name": "Support",
+          "duration": 3600,
+          "restrictions": {
+            "billable": 1,
+            "customers_id": 10001
+          },
+          "revenue": 150,
+          "has_budget_revenues_billed": false,
+          "has_budget_revenues_not_billed": false,
+          "has_non_budget_revenues_billed": false,
+          "has_non_budget_revenues_not_billed": true,
+          "budget_used": false,
+          "hourly_rate": 150,
+          "hourly_rate_is_equal_and_has_no_lumpsums": true,
+          "grouped_by": "projects_id",
+          "sub_groups": [
+            {
+              "group": "30002",
+              "name": "Consulting",
+              "duration": 3600,
+              "restrictions": {
+                "billable": 1,
+                "customers_id": 10001,
+                "projects_id": 20002
+              },
+              "revenue": 150,
+              "has_budget_revenues_billed": false,
+              "has_budget_revenues_not_billed": false,
+              "has_non_budget_revenues_billed": false,
+              "has_non_budget_revenues_not_billed": true,
+              "budget_used": false,
+              "hourly_rate": 150,
+              "hourly_rate_is_equal_and_has_no_lumpsums": true,
+              "grouped_by": "services_id"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

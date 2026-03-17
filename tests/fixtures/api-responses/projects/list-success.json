@@ -1,0 +1,23 @@
+{
+  "paging": {
+    "items_per_page": 50,
+    "current_page": 1,
+    "count_pages": 1,
+    "count_items": 1
+  },
+  "data": [
+    {
+      "id": 201,
+      "customers_id": 101,
+      "name": "Website Relaunch",
+      "number": "P-201",
+      "active": true,
+      "completed": false,
+      "billable_default": true,
+      "deadline": "2026-03-31",
+      "start_date": "2026-03-01",
+      "note": "Main delivery project"
+    }
+  ]
+}
+

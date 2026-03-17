@@ -1,0 +1,22 @@
+{
+  "paging": {
+    "items_per_page": 50,
+    "current_page": 1,
+    "count_pages": 1,
+    "count_items": 1
+  },
+  "data": [
+    {
+      "id": 401,
+      "name": "Jane Example",
+      "email": "jane@example.com",
+      "active": true,
+      "role": "worker",
+      "teams_id": 12,
+      "language": "de",
+      "timezone": "Europe/Zurich",
+      "start_date": "2025-01-01"
+    }
+  ]
+}
+

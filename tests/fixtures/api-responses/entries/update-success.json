@@ -1,0 +1,17 @@
+{
+  "entry": {
+    "billable": 1,
+    "customers_id": 10001,
+    "duration": 2700,
+    "hourly_rate": 210,
+    "id": 601,
+    "lumpsum": null,
+    "lumpsum_services_id": null,
+    "projects_id": 20002,
+    "services_id": 30002,
+    "text": "Updated manual entry",
+    "time_since": "2026-03-16T08:15:00Z",
+    "time_until": "2026-03-16T09:00:00Z",
+    "users_id": 40001
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "paging": {
+    "items_per_page": 50,
+    "current_page": 1,
+    "count_pages": 1,
+    "count_items": 1
+  },
+  "data": [
+    {
+      "id": 101,
+      "name": "Acme GmbH",
+      "number": "C-101",
+      "active": true,
+      "billable_default": true,
+      "note": "Priority account",
+      "color": 4
+    }
+  ]
+}
+

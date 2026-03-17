@@ -1,0 +1,20 @@
+{
+  "current_time": "2026-03-16T10:30:10Z",
+  "running": null,
+  "stopped": {
+    "billable": 1,
+    "customers_id": 101,
+    "duration": 1810,
+    "hourly_rate": 150,
+    "id": 9001,
+    "lumpsum": null,
+    "lumpsum_services_id": null,
+    "projects_id": 201,
+    "services_id": 301,
+    "text": "Incident follow-up",
+    "time_since": "2026-03-16T10:00:00Z",
+    "time_until": "2026-03-16T10:30:10Z",
+    "users_id": 401
+  },
+  "stopped_has_been_truncated": false
+}

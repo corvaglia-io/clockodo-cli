@@ -1,0 +1,11 @@
+{
+  "data": {
+    "id": 42,
+    "name": "Jane Example",
+    "email": "jane@example.com",
+    "active": true,
+    "role": "owner",
+    "timezone": "Europe/Zurich"
+  }
+}
+

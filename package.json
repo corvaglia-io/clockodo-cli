@@ -1,0 +1,53 @@
+{
+  "name": "clockodo-cli",
+  "version": "0.1.0",
+  "description": "A terminal-first CLI for Clockodo",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "clockodo": "./bin/run.js"
+  },
+  "files": [
+    "/bin",
+    "/dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "dev": "node --import tsx ./src/dev.ts",
+    "lint": "eslint src tests eslint.config.js vitest.config.ts",
+    "prepare": "npm run build",
+    "smoke": "bash scripts/smoke.sh",
+    "smoke:live": "CLOCKODO_SMOKE_LIVE=1 bash scripts/smoke.sh",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.2.9",
+    "undici": "^7.13.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "globals": "^15.15.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "vitest": "^3.0.8"
+  },
+  "oclif": {
+    "bin": "clockodo",
+    "commands": "./dist/commands",
+    "topicSeparator": " "
+  }
+}

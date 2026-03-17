@@ -1,0 +1,22 @@
+{
+  "data": {
+    "id": 201,
+    "customers_id": 101,
+    "name": "Website Relaunch",
+    "number": "P-201",
+    "active": true,
+    "billable_default": true,
+    "completed": false,
+    "completed_at": null,
+    "test_data": false,
+    "count_subprojects": 0,
+    "service_assignments": [
+      301
+    ],
+    "billed_money": 2500,
+    "billed_completely": true,
+    "deadline": "2026-03-31",
+    "start_date": "2026-03-01",
+    "note": "Main delivery project"
+  }
+}

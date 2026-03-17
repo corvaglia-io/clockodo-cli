@@ -1,0 +1,27 @@
+{
+  "defaults": {
+    "invoice": {
+      "bankAccountId": 1,
+      "currencyId": 1,
+      "mwstIsNet": true,
+      "mwstType": 0,
+      "paymentTypeId": 1,
+      "showPositionTaxes": true,
+      "userId": 1
+    },
+    "position": {
+      "accountId": 128,
+      "taxId": 14,
+      "unitId": 1
+    }
+  },
+  "customers": {
+    "10001": {
+      "contactId": 2,
+      "invoice": {
+        "reference": "2026-02",
+        "title": "Example Customer AG February 2026"
+      }
+    }
+  }
+}
