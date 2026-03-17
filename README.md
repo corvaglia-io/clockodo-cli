@@ -77,6 +77,7 @@ npm link
 
 - [docs/INSTALL.md](docs/INSTALL.md): prerequisites, setup, authentication, and local run modes
 - [docs/COMMANDS.md](docs/COMMANDS.md): implemented commands and sample invocations
+- [docs/HOMEBREW.md](docs/HOMEBREW.md): how to publish and install the CLI through a Homebrew tap
 - [docs/examples/bexio-billing-map.example.json](docs/examples/bexio-billing-map.example.json): example Clockodo customer to Bexio contact mapping
 - [docs/clockodo-cli-prd-v1.md](docs/clockodo-cli-prd-v1.md): product scope and roadmap
 - [docs/CLOCKODO-CONVENTIONS.md](docs/CLOCKODO-CONVENTIONS.md): contributor conventions
